@@ -1,0 +1,54 @@
+e = n; count = n-1; f_b = 1; l1_b = 1; l2_b = 1; 
+l1_count = 0; l2_count = 0;
+
+p(count)
+p(e)
+p(f_b)
+b = unlink(freelist)
+v(f_b)
+
+
+p(l1_b)
+link(b , list1)
+v(l1_b)
+v(l1_count)
+
+p(l1_count)
+p(l1_b)
+x = unlink(list1)
+v(l1_b)
+
+p(e)
+p(f_b)
+y = unlink(freelist)
+v(f_b)
+
+p(l2_b)														               
+link(y , list2)									
+v(l2_b)
+v(l2_count)	
+
+p(f_b)
+link(x , freelist)
+v(f_b)
+v(e)
+v(count)
+
+p(l2_count)									
+p(l2_b)										
+c = unlink(list2)		
+v(l2_b)															
+        														
+p(f_b)
+link(c , freelist)
+v(f_b)
+v(e)
+
+
+
+
+
+
+
+
+
